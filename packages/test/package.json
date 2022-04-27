@@ -1,0 +1,29 @@
+{
+  "name": "test",
+  "version": "0.0.2",
+  "description": "> TODO: description",
+  "author": "杨青青 <yangqingqing4@iwahlecloud.com>",
+  "homepage": "https://github.com/yang200258/test-lerna#readme",
+  "license": "ISC",
+  "main": "lib/test.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "http://127.0.0.1:7001/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yang200258/test-lerna.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/yang200258/test-lerna/issues"
+  }
+}
