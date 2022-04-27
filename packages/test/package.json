@@ -1,6 +1,6 @@
 {
-  "name": "test",
-  "version": "0.0.6",
+  "name": "@whale-hk/test",
+  "version": "0.0.7",
   "description": "> TODO: description",
   "author": "杨青青 <yangqingqing4@iwahlecloud.com>",
   "homepage": "https://github.com/yang200258/test-lerna#readme",
@@ -26,5 +26,5 @@
   "bugs": {
     "url": "https://github.com/yang200258/test-lerna/issues"
   },
-  "gitHead": "47084ea8a74407f275742df628f09e292a0faa72"
+  "gitHead": "67473fc8d5f95d9308fe5f5f602ba259490be5ea"
 }
