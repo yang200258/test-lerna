@@ -1,6 +1,6 @@
 {
   "name": "@whale-hk/utils",
-  "version": "0.0.13",
+  "version": "0.0.1",
   "main": "lib/index",
   "description": "input your desc",
   "module": "es/index",
