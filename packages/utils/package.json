@@ -1,0 +1,19 @@
+{
+  "name": "@whale-hk/utils",
+  "version": "0.0.13",
+  "main": "lib/index",
+  "description": "input your desc",
+  "module": "es/index",
+  "unpkg": "dist/index",
+  "files": [
+    "assets/*.css",
+    "es",
+    "lib"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/runtime": "^7.16.7"
+  },
+  "gitHead": "15911ffa922372f92d2c306ebbec3e8c59469681"
+}

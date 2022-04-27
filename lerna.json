@@ -1,0 +1,32 @@
+{
+  "packages": [
+    "packages/*"
+  ],
+  "useWorkspaces": true,
+  "npmClient": "yarn",
+  "command": {
+    "publish": {
+      "access": "public",
+      "ignoreChanges": [
+        "ignored-file",
+        "plugin-*"
+      ],
+      "message": "chore(release): publish",
+      "registry": "http://127.0.0.1:7001/"
+    },
+    "bootstrap": {
+      "ignore": "plugin-*",
+      "npmClientArgs": [
+        "--no-package-lock"
+      ],
+      "scope": []
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "ignoreChanges": [
+    "**/*.md"
+  ],
+  "version": "0.0.0"
+}

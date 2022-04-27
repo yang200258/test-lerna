@@ -1,0 +1,80 @@
+{
+  "private": true,
+  "name": "gpy-web",
+  "version": "1.0.0",
+  "author": "little yang",
+  "sideEffects": [
+    "./src/**/style/**"
+  ],
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "init": "yarn install --registry=https://registry-cnpm.dayu.work/ && lerna clean && lerna bootstrap",
+    "fix-memory-limit": "cross-env LIMIT=4096 increase-memory-limit",
+    "preinstall": "npm config set ignore-engines true",
+    "prepare": "husky install",
+    "lint": "eslint --fix --ext .js --ext .jsx --ext .ts --ext .tsx --no-error-on-unmatched-pattern",
+    "lint-staged": "lint-staged",
+    "create": "node scripts/createPackage/create.js",
+    "bootstrap": "lerna bootstrap",
+    "clean": "lerna clean",
+    "start": "dumi dev",
+    "build": "dumi build && npm run father:build && node scripts/pack.js",
+    "father:build": "father-build",
+    "publish": "lerna publish --registry=https://zwyf.dn.haikou.gov.cn/whale_hk_library/"
+  },
+  "module": "es/index.js",
+  "typings": "es/index.d.ts",
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix --ext .js --ext .jsx --ext .ts --ext .tsx"
+    ]
+  },
+  "dependencies": {
+    "@ali-whale/fetch-web": "^0.9.2",
+    "antd": "^4.18.3",
+    "antd-mobile": "^5.0.0-rc.17",
+    "babel-polyfill": "^6.26.0",
+    "change-case": "^4.1.2",
+    "classnames": "^2.3.1",
+    "element-remove": "^1.0.4",
+    "enquirer": "^2.3.6",
+    "lerna": "^4.0.0",
+    "react": "^16.12.0 || ^17.0.0",
+    "react-dom": "^17.0.2",
+    "rollup-plugin-visualizer": "^5.6.0",
+    "typescript": "^4.5.4"
+  },
+  "devDependencies": {
+    "@ali-whale/eslint-config": "^1.1.6",
+    "@babel/runtime": "^7.16.7",
+    "@rollup/plugin-commonjs": "^16.0.0",
+    "@testing-library/jest-dom": "^5.15.1",
+    "@testing-library/react": "^12.1.2",
+    "@types/jest": "^27.0.3",
+    "@types/lodash.debounce": "^4.0.6",
+    "@types/lodash.isequal": "^4.5.5",
+    "@types/lodash.throttle": "^4.1.6",
+    "@types/react": "^17.0.43",
+    "@types/react-dom": "^17.0.14",
+    "@typescript-eslint/eslint-plugin": "^5.9.1",
+    "@typescript-eslint/parser": "^5.9.0",
+    "@umijs/fabric": "^2.8.1",
+    "@umijs/test": "^3.0.5",
+    "babel-plugin-import": "^1.13.3",
+    "cross-env": "^7.0.3",
+    "dumi": "^1.1.38",
+    "dumi-theme-mobile": "^1.1.21",
+    "eslint": "^7.32.0",
+    "father-build": "1.21.2",
+    "gh-pages": "^3.0.0",
+    "husky": "^7.0.4",
+    "increase-memory-limit": "^1.0.7",
+    "lint-staged": "^10.0.7",
+    "prettier": "^2.2.1",
+    "rollup-plugin-img": "^1.1.0",
+    "rollup-plugin-polyfill-node": "^0.8.0"
+  },
+  "license": "ISC"
+}
