@@ -1,6 +1,6 @@
 {
   "name": "test",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "> TODO: description",
   "author": "杨青青 <yangqingqing4@iwahlecloud.com>",
   "homepage": "https://github.com/yang200258/test-lerna#readme",
@@ -25,5 +25,6 @@
   },
   "bugs": {
     "url": "https://github.com/yang200258/test-lerna/issues"
-  }
+  },
+  "gitHead": "e8bc4cbbb0ef6cd2df9929ba2c524611b8d57aff"
 }
